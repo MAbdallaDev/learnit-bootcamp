@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         input {
+            padding: 0.25rem 1rem ;
+            border: 1px solid #ccc;
+            margin: 0.25rem;
+         }
+      </style>
+   </head>
+   <body>
+      <form action="send.php" method="POST">
+         <div class="form-group">
+         <label for="first-name">first name</label>
+         <input type="text" name="first-name" id="first-name" required />
+         </div>
+         <div class="form-group">
+         <label for="last-name">last name</label>
+         <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="write your last name here"
+         />
+         </div>
+         <div class="form-group">
+         <label for="number">phone number</label>
+         <input
+            type="text"
+            name="number"
+            id="number"
+            minlength="11"
+            maxlength="11"
+         />
+         </div>
+         <input type="submit" value="submit">
+         <input type="reset" value="reset form">
+      </form>
+      <hr />
+      <form action="send.php" method="POST" novalidate>
+         <div class="form-group">
+         <label for="first-name">first name</label>
+         <input type="text" name="first-name" id="first-name" required />
+         </div>
+         <div class="form-group">
+         <label for="last-name">last name</label>
+         <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="write your last name here"
+         />
+         </div>
+         <div class="form-group">
+         <label for="number">phone number</label>
+         <input
+            type="text"
+            name="number"
+            id="number"
+            minlength="11"
+            maxlength="11"
+         />
+         </div>
+         <input type="submit" value="submit">
+         <input type="reset" value="reset form">
+      </form>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>
+      Test Table With merged cells
+   </title>
+   <style>
+      table {
+         border-collapse: collapse;
+         text-transform: capitalize;
+         width:90%;
+         margin: auto;
+         height:300px;
+         text-align: center;
+      }
+      th,td {
+         padding: 0.5rem 0;
+         border: 1px dashed #222;
+      }
+      td:first-child {
+         font-weight: 600;
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <caption>
+         Test Table With merged cells
+      </caption>
+      <thead>
+         <tr >
+            <th rowspan="2"> </th>
+            <th colspan="2">average  </th>
+            <th rowspan="2">red  </th>
+         </tr>
+         <tr >
+            <th>height  </th>
+            <th>weight  </th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+         </tr>
+         <tr>
+            <td>females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+</html>

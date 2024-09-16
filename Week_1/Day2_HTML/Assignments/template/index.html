@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Template</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+         text-transform: capitalize;
+      }
+
+      img {
+         max-width: 100%;
+         height: 100%;
+      }
+
+      header {
+         margin-top: 1rem;
+         padding: 0 1.25rem;
+      }
+
+      .logo {
+         margin: auto;
+         text-align: center;
+      }
+
+      .logo img {
+         border-radius: 50%;
+         height: 86px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      nav ul {
+         padding: 1.75rem 0;
+         margin-top: -1rem;
+         background-color: #777;
+         display: flex;
+         gap: 2.25rem;
+         align-items: center;
+         justify-content: center;
+
+         list-style: none;
+      }
+
+      nav a {
+         margin-right: 15px;
+         text-decoration: none;
+         color: #fff;
+      }
+
+      .page-container {
+         display: flex;
+      }
+
+      .page-container aside {
+         width: 20%;
+         padding: 1rem;
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+      }
+
+      .page-container aside>div:not(:last-of-type) {
+         border-bottom: 2px solid #222;
+
+      }
+
+      .social {
+         text-align: center;
+         padding-bottom: 1rem;
+      }
+
+      .social-imgs {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 1rem;
+      }
+
+      .social img {
+         width: 50px;
+      }
+
+      input,
+      textarea {
+         width: 100%;
+         padding: 0.45rem 0;
+         border: 1px solid #999;
+         border-radius: 4px;
+         margin-bottom: 1rem;
+      }
+
+      .page-container main {
+         width: 60%;
+      }
+
+      aside.left button {
+         background-color: transparent;
+         border: none;
+         outline: none;
+      }
+
+      aside.left button img {
+         /* height: 40px; */
+         margin-top: -2rem;
+      }
+
+      iframe {
+         max-width: 100%;
+      }
+
+      main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      main li {
+         padding: 0.25rem 0;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="logo">
+         <a href="">
+            <img src="imgs/logo.jpg" alt="logo" decoding="async" />
+         </a>
+      </div>
+   </header>
+   <nav>
+      <ul>
+         <li>
+            <a href="" target="_blank">Home</a>
+         </li>
+         <li>
+            <a href="contact.html" target="_blank">Contact Us</a>
+         </li>
+         <li>
+            <a href="about.html" target="_blank">About Us</a>
+         </li>
+      </ul>
+   </nav>
+   <div class="page-container">
+      <aside class="left">
+         <div class="user">
+            <form action="submit-form.html" method="post">
+               <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required /><br />
+               </div>
+               <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required /><br />
+               </div>
+
+               <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message"></textarea><br />
+               </div>
+
+               <button>
+                  <img src="imgs/login-buttons.png" alt="submit" decoding="async" />
+               </button>
+            </form>
+         </div>
+         <div class="social">
+            <h2>my social media</h2>
+            <div class="social-imgs">
+               <a href="https://www.facebook.com/">
+                  <img src="imgs/Facebook_Logo.png" alt="facebook" decoding="async" />
+               </a>
+               <a href="https://x.com/twitt_login">
+                  <img src="imgs/twitter.png" alt="twitter" decoding="async" />
+               </a>
+            </div>
+         </div>
+         <div class="iframe-wrapper">
+            <iframe src="https://www.w3schools.com/videos/index.php" frameborder="0"></iframe>
+         </div>
+      </aside>
+      <main>
+         <h1>my Profile</h1>
+         <ul>
+            <li>name:<span>mostafa abdallah</span></li>
+            <li>
+               age
+               <span>24</span>
+            </li>
+            <li>
+               phone
+               <span>01127946710</span>
+            </li>
+            <li>
+               faculty
+               <span>computer and information of minia</span>
+            </li>
+            <li>
+               hobiies
+               <ol type="I">
+                  <li>reading</li>
+                  <li>coding</li>
+                  <li>online gaming</li>
+               </ol>
+            </li>
+            <li>
+               <a href="mailto:mostafaabdalla.webd@gmail.com">mostafaabdalla.webd@gmail.com</a>
+            </li>
+         </ul>
+      </main>
+
+      <aside class="right">
+         <div class="my-img">
+            <img src="imgs/myImage.jpeg" alt="mostafa abdallah photo" decoding="async" />
+         </div>
+         <div class="news">
+            <h1>Latest News</h1>
+            <ul>
+               <li>
+                  <h4>Tech Giants Announce New AI Collaboration</h2>
+                     <p>
+                        Several major technology companies have joined forces to create
+                        a new AI research initiative aimed at advancing machine learning
+                        and artificial intelligence.
+                     </p>
+               </li>
+               <li>
+                  <h4>Climate Change Summit Reaches Key Agreement</h2>
+                     <p>
+                        Global leaders at the Climate Change Summit have signed a
+                        historic agreement to reduce carbon emissions and invest in
+                        renewable energy sources.
+                     </p>
+               </li>
+               <li>
+                  <h4>Sports Team Wins Championship in Dramatic Finale</h2>
+                     <p>
+                        The local sports team claimed the championship title after a
+                        thrilling overtime victory, sparking celebrations across the
+                        city.
+                     </p>
+               </li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+</body>
+
+</html>
