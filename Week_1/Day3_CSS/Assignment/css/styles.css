@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* padding: 20px; */
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  justify-content: center;
+}
+
+header p {
+  color: #333;
+  font-size: 0.9rem;
+}
+main {
+  margin-block: 2rem;
+}
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.filters {
+  display: flex;
+  margin: 1.5rem 0;
+  justify-content: space-between;
+}
+.filters ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 0.5rem;
+}
+.filters ul li {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.filters ul li i {
+   height: 35px;
+   width: 35px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #003262;
+   color: #fff;
+}
+.filters button {
+   background-color: transparent;
+   color: #003262;
+   padding: 9px;
+   border: none;
+   cursor: pointer;
+  font-weight: 600;
+}
+.filters button:not(:last-child) {
+  border: 1px solid #003262;
+}
+
+.filters .sort-dropdown {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 240px;
+}
+
+.filters select {
+  padding: 10px;
+  width: 100%;
+}
+
+.product-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+   width: 96%;
+   padding: 0.5rem;
+   text-align: center;
+   margin-bottom: 1rem;
+   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px; */
+}
+.img-wrapper {
+   background-color: #f2f2f2;
+   position: relative;
+}
+.img-wrapper  i {
+   position: absolute;
+   right: 0.75rem;
+   top: 0.75rem;
+   font-size: 1.5rem;
+   color: #333;
+
+}
+.product-card img {
+   max-width: 100%;
+   height: 240px;
+}
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding-top: 1rem;
+   gap: 0.5rem;
+}
+.product-card  h5 {
+   font-weight: 800;
+   color: #333;
+}
+.product-card strong {
+   font-size: 0.95rem;
+   color: #333;
+}
+.product-card span , strong {
+   font-size: 0.85rem;
+   color: #666;
+}
+@media (min-width: 786px) {
+   .container {
+     width: 90%;
+   }
+   .product-card {
+      width: 50%; 
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 75%;
+   }
+   .product-card {
+      width: 33%; 
+   }
+ }
